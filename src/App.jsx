@@ -1,3 +1,4 @@
+import Form from './components/Form'
 import styled from '@emotion/styled'
 import CriptoImage from './img/imagen-criptos.png'
 
@@ -51,6 +52,7 @@ function App() {
 
         <div>
           <Heading>Instant Crypto Quoter</Heading>
+          <Form />
         </div>
       </Container>
     </div>
