@@ -21,12 +21,13 @@ const InputSubmit = styled.input`
 
 const Form = () => {
 
-  const [ SelectCurrencies ] = useSelectCurrencies()
+  const [ SelectCurrencies ] = useSelectCurrencies('Select your currency')
 
   SelectCurrencies()
   
   return (
     <form>
+      <SelectCurrencies />
       <InputSubmit 
         type="submit" 
         value="Quote" 
