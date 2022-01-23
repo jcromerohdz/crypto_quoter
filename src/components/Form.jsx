@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import useSelectCurrencies from "../hooks/useSelectCurrencies";
 
 const InputSubmit = styled.input`
   background-color: #9497ff;
@@ -19,12 +20,17 @@ const InputSubmit = styled.input`
 `
 
 const Form = () => {
+
+  const [ SelectCurrencies ] = useSelectCurrencies()
+
+  SelectCurrencies()
+  
   return (
     <form>
-
-      <form>
-        <InputSubmit type="submit" value="Quote" />
-      </form>
+      <InputSubmit 
+        type="submit" 
+        value="Quote" 
+      />
     </form>
   )
 }
